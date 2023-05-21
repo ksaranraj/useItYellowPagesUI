@@ -1,0 +1,42 @@
+.row {
+    display: flex;
+}
+.padding-top {
+    margin-top: 3%;
+}
+.space-between {
+    margin-right: 10%;
+}
+.width30 {
+    width: 30%;
+}
+.width50 {
+    width: 50%;
+}
+.width100 {
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+.margin-left40 {
+    margin-left: 40%;
+}
+.margin-left25 {
+    margin-left: 25%;
+}
+.padding-left {
+    margin-left: 3%;
+}
+.right-align {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin-left: 40%;
+}
+.mdc-tab-indicator--active {
+    background-color: red !important;
+}
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    color: white !important;
+}

@@ -1,0 +1,39 @@
+<form [formGroup]="headerForm">
+    <div class="row">
+        <div id="logo padding-left width30">
+            <mat-card>
+                <img mat-card-image src="assets/useit_yellowpages_madurai.gif">
+            </mat-card>
+        </div>
+        <div class="width100">
+            <div id="socialHeader" class="flex margin-left40">
+                <div id="cityDiv">
+                    <mat-form-field appearance="fill">
+                        <mat-select placeholder="Select City" formControlName="city">
+                            <mat-option *ngFor="let city of cities" [value]="city.value">
+                                {{city.value}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div id="socialWidget" class="padding-top width50 padding-left">
+                    <i class="fa fa-facebook space-between"></i>
+                    <i class="fa fa-twitter space-between"></i>
+                    <i class="fa fa-pinterest space-between"></i>
+                    <i class="fa fa-google-plus"></i>
+                </div>
+            </div>
+            
+            <div id="menuHeader" class="flex margin-left25">
+                <div id="menu">
+                    <mat-tab-group class="remove-border-bottom">
+                        <mat-tab label="Home"> Content 1 </mat-tab>
+                        <mat-tab label="About Us"> Content 2 </mat-tab>
+                        <mat-tab label="Advertise With Us"> Content 3 </mat-tab>
+                        <mat-tab label="Contact Us"> Content 3 </mat-tab>
+                    </mat-tab-group>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
